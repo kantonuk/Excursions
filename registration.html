@@ -1,0 +1,57 @@
+ 
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="text-align: center;">
+  <section class="wrapper">
+    <div class="signup">
+    <div  style="background-image: none;" class="header">
+      <header  style="font-size: 60px;" class="h">Реєстрація</header>
+    </div>
+      <form id="signupForm">
+
+        <input type="text" name="fullname" placeholder="Імя" required>
+
+        <input type="email" name="email" placeholder="Електронна пошта" required>
+
+        <input type="password" name="password" placeholder="Пароль" required>
+
+        <input type="number_phone" name="number_phone" placeholder="Номер телефону" required>
+        <div class="checkbox">
+          <input type="checkbox" id="signupCheck" required>
+          <label style="color: aliceblue;" for="signupCheck">Я приймаю усі умови</label>
+        </div>
+        <input class="border-btn color-one" type="submit" value="Зареєструватись">
+
+      </form>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var signupForm = document.getElementById('signupForm');
+      
+      signupForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        fullname = signupForm.fullname.value;
+        email = signupForm.email.value;
+        password = signupForm.password.value;
+        number_phone=signupForm.number_phone.value;
+        
+        localStorage.setItem('fullname', fullname);
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', password);
+        localStorage.setItem('number_phone', number_phone);
+        
+        alert('Реєстрація пройшла успішно,'+fullname+"!");
+        window.location.href = 'index.html';
+      });
+    });
+  </script>
+</body>
+</html>
