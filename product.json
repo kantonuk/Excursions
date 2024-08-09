@@ -1,0 +1,30 @@
+[
+    {
+        "image":"picteres/kostel.jpeg",
+        "title":"Похід на гору Костел",
+        
+        "price":4500,
+        "details":"kostel.html"
+        
+        
+        
+
+    },
+    {
+        "title":"Похід на Говерла",
+        
+        "price":5000,
+        "image":"picteres/hoverla.JPG",
+        "details":"hoverla.html"
+        
+    },
+    {
+        "title":"Карпати",
+         
+        "price":4500,
+        "image":"picteres/voda_club.jpg",
+        "details":"vodaclub.html"
+        
+
+    }
+]

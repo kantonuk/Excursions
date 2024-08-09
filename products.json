@@ -1,0 +1,30 @@
+[
+    {
+        "image":"picteres/solotvino.jpg",
+        "title":"Солотвино",
+        
+        "price":3500,
+        "details":"solotvino.html"
+        
+        
+        
+
+    },
+    {
+        "title":"Синевир",
+        
+        "price":4000,
+        "image":"picteres/synevyr.jpg",
+        "details":"synevyr.html"
+        
+    },
+    {
+        "title":"Аквапарк у Косино",
+         
+        "price":3000,
+        "image":"picteres/kosino.jpg",
+        "details": "kosuno.html"
+        
+
+    }
+]
